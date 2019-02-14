@@ -1,0 +1,14 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: ofbiz
+  annotations:
+    kubernetes.io/ingress.allow-http: "false"
+spec:
+  tls:
+  - hosts:
+    - my.host
+    secretName: tls-secret
+  backend:
+    serviceName: ofbiz-nginx
+    servicePort: 8081
