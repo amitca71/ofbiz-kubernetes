@@ -1,6 +1,6 @@
 # ofbiz-kubernetes
 deploy ofbiz + nginx on GKE
-The following instructions of creating ofbiz on kubernetes, using derby database 
+The following instructions of creating ofbiz on kubernetes, using derby database and ofbiz demo data
 Each and every Deployment (pod), contains nginx and ofbiz containers 
 
 1) create google cloud project (https://cloud.google.com/resource-manager/docs/creating-managing-projects)
